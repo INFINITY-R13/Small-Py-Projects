@@ -66,24 +66,6 @@ python main.py
 
 ---
 
-## 📈 Progress
-
-| Status | Project |
-|--------|---------|
-| ⬜ | Project 01 |
-| ⬜ | Project 02 |
-| ⬜ | Project 03 |
-| ⬜ | Project 04 |
-| ⬜ | Project 05 |
-| ... | ... |
-
-Legend:
-- ⬜ Not Started
-- 🟨 In Progress
-- ✅ Completed
-
----
-
 ## 🛠️ Technologies
 
 - Python 3
