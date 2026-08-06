@@ -101,7 +101,7 @@ python bagels.py
 
 ```
 Bagels/
-│── bagels.py
+│── main.py
 └── README.md
 ```
 
