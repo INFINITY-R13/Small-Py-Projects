@@ -1,110 +1,119 @@
-# Caesar Hacker
+# Caesar Hacker 🔐
 
-A simple Python program that **brute-forces a Caesar cipher** by trying every possible key from `0` to `25`.
+A simple Python program that **hacks a Caesar cipher** by trying every possible key and displaying the resulting decrypted messages.
 
-Instead of knowing the encryption key beforehand, the program decrypts the message using every possible key and displays all the results. You can then identify the correct plaintext by looking for the meaningful output.
+Since a Caesar cipher has only **26 possible keys**, the program can easily perform a brute-force attack and show all possible plaintexts.
 
-## How It Works
+## 📌 Features
 
-A Caesar cipher shifts each letter of the alphabet by a fixed number of positions.
+* 🔓 Brute-force Caesar cipher decryption
+* 🔢 Tries all 26 possible keys
+* 📝 Accepts encrypted messages from the user
+* 🔤 Supports uppercase letters
+* ✨ Preserves spaces, numbers, and punctuation
+* 💻 Simple command-line interface
 
-For example, with a key of `3`:
+## 🛠️ Technologies Used
 
-```text
-A → D
-B → E
-C → F
-```
+* **Python 3**
+* Built-in Python features only
 
-To decrypt, the program shifts the letters in the opposite direction.
-
-The Caesar Hacker tries all 26 possible keys:
-
-```text
-Key #0
-Key #1
-Key #2
-...
-Key #25
-```
-
-One of the results should reveal the original message.
-
-## Example
-
-### Input
+## 📂 Project Structure
 
 ```text
-L NQRZ WKDW
+Caesar Hacker/
+│
+├── main.py
+└── README.md
 ```
 
-### Output
+## 🚀 How to Run
 
-```text
-Key #0: L NQRZ WKDW
-Key #1: K MPQY VJCV
-Key #2: J LOPX UIBU
-Key #3: I KNOW THAT
-...
-```
+Make sure Python 3 is installed on your system.
 
-The meaningful result is:
-
-```text
-Key #3: I KNOW THAT
-```
-
-Therefore, the encryption key was **3**.
-
-## Features
-
-* Tries all 26 Caesar cipher keys.
-* Works with uppercase letters.
-* Preserves spaces and other characters.
-* Uses f-strings for modern Python formatting.
-* Simple command-line interface.
-
-
-## Requirements
-
-* Python 3.x
-
-No external libraries are required.
-
-## How to Run
-
-1. Make sure Python 3 is installed.
-2. Open a terminal in the project directory.
-3. Run:
+Run the program using:
 
 ```bash
-python3 main.py
+python main.py
 ```
 
-4. Enter an encrypted Caesar cipher message.
-5. Check the output for the meaningful decrypted message.
+You will be prompted to enter an encrypted message:
 
-## Concepts Practiced
+```text
+Caesar Cipher Hacker
+--------------------
+Enter the encrypted message to hack:
+KHOOR
+```
 
-This project helps practice:
+The program will then display all possible decryptions:
 
-* `for` loops
-* Nested loops
-* `if` / `else` statements
-* Strings
-* String indexing
-* `str.find()`
-* User input
-* The modulo-style wraparound logic
-* f-strings
+```text
+Key #0: KHOOR
+Key #1: JGNNQ
+Key #2: IFMMP
+Key #3: HELLO
+...
+```
+
+In this example, **Key #3** produces the correct plaintext:
+
+```text
+HELLO
+```
+
+## 🧠 How It Works
+
+The program uses a **brute-force approach**.
+
+1. The encrypted message is entered by the user.
+2. The program loops through keys from `0` to `25`.
+3. For each key, every letter is shifted backward by that amount.
+4. The resulting message is printed alongside its key.
+5. The user can identify the correct plaintext from the 26 results.
+
+For example:
+
+```text
+Encrypted: KHOOR
+Key:       3
+
+K → H
+H → E
+O → L
+O → L
+R → O
+```
+
+Result:
+
+```text
+HELLO
+```
+
+## ⏱️ Complexity
+
+Let `n` be the length of the encrypted message.
+
+* **Time Complexity:** `O(26 × n)` → effectively `O(n)`
+* **Space Complexity:** `O(n)`
+
+## ⚠️ Limitations
+
+* The program does not automatically determine which result is the correct plaintext.
+* It works specifically with the English alphabet defined in `SYMBOLS`.
+* Caesar ciphers are intentionally simple and should **not** be used for secure communication.
+
+## 🎯 Purpose
+
+This project is intended as a beginner-friendly exercise for learning:
+
+* Python loops
+* String manipulation
 * Brute-force techniques
+* Caesar cipher concepts
+* Basic cryptography
 
-## Limitations
+## 📜 License
 
-This program is specifically designed for the basic Caesar cipher using the 26 uppercase English letters.
-
-It does not automatically determine which output is correct. The user must inspect the results and identify the meaningful plaintext.
-
-## License
-
-This project is for learning and educational purposes.
+This project is open-source and available for educational purposes.

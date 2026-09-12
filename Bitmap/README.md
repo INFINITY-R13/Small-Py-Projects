@@ -1,83 +1,136 @@
 # Bitmap
 
-A simple Python program that displays a user-entered message inside an ASCII-art bitmap.
+A simple **Tkinter GUI application** that displays a user-entered message inside a predefined ASCII bitmap pattern.
 
-## Description
+This project is a graphical version of the classic Bitmap program, where characters from the entered message are repeatedly placed wherever the bitmap contains a `*`.
 
-**Bitmap** takes a message from the user and uses it to replace the non-space characters in a predefined bitmap pattern.
+## Features
 
-The message is repeated as necessary using the modulo operator, creating a text-based visual effect.
+* 🖥️ Simple graphical user interface built with Tkinter
+* ✍️ Custom message input
+* 🖼️ Generates an ASCII bitmap using the entered message
+* 🔁 Repeats the message automatically across the bitmap
+* ▶️ Generate button
+* 🧹 Clear button
+* ❌ Exit button
+* ⌨️ Press **Enter** to generate the bitmap
+* 📜 Scrollable output area
+* 💻 Uses a monospaced font for proper bitmap alignment
 
 ## How It Works
 
-1. The program stores an ASCII-art bitmap in the `bitmap` variable.
-2. The user enters a message.
-3. If the message is empty, the program exits.
-4. The bitmap is processed line by line.
-5. Spaces in the bitmap remain unchanged.
-6. Other characters are replaced with characters from the user's message.
-7. The `%` operator makes the message repeat when necessary.
+The application contains a predefined bitmap pattern made from spaces and `*` characters.
 
-## Example
+For every character in the bitmap:
 
-If the user enters:
+* If the character is a space, a space is displayed.
+* If the character is `*`, a character from the user's message is displayed.
+* When the end of the message is reached, the program starts from the beginning again.
+
+For example, if the message is:
 
 ```text
-infinity
+HELLO
 ```
 
-The program produces an output similar to:
+the characters will be repeatedly placed across the bitmap:
 
 ```text
- nfinityinfinityinfinityinfinityinfinity...
-    nityinfinityin   i  inf ni  i      ...
-   inityinfinityinfinity nf ni y  f ...
+H E L L O H E L L O ...
 ```
 
-The exact appearance depends on the bitmap pattern.
+This creates a text-filled ASCII image.
 
 ## Requirements
 
 * Python 3.x
-* No external libraries are required.
+* Tkinter
+
+Tkinter is included with most standard Python installations.
 
 ## How to Run
 
-From the project directory, run:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/Small-Py-Projects.git
+```
+
+2. Navigate to the Bitmap project:
+
+```bash
+cd Small-Py-Projects/Bitmap
+```
+
+3. Run the program:
+
+```bash
+python main.py
+```
+
+On some systems, you may need:
 
 ```bash
 python3 main.py
 ```
 
-Then enter the message you want to display.
+## Usage
 
-## Code Concepts
+1. Launch the application.
+2. Enter a message in the input field.
+3. Click **Generate** or press **Enter**.
+4. The bitmap will be displayed in the output area.
+5. Click **Clear** to remove the current message and output.
+6. Click **Exit** to close the application.
 
-This project demonstrates:
+## Example
 
-* Variables
-* Strings
-* User input with `input()`
-* `if` statements
-* `for` loops
-* `enumerate()`
-* `splitlines()`
-* String indexing
-* The modulo (`%`) operator
-* `sys.exit()`
-* ASCII art
+Input:
+
+```text
+PYTHON
+```
+
+The program uses the characters from `PYTHON` repeatedly wherever the bitmap contains a `*`.
+
+The result is an ASCII-art pattern filled with the message.
 
 ## Project Structure
 
 ```text
 Bitmap/
-└── main.py
+├── main.py
+└── README.md
 ```
 
-## Learning Purpose
+## Concepts Used
 
-This project is useful for practicing **loops, string manipulation, indexing, and the modulo operator** while creating a simple ASCII-art effect.
+This project demonstrates several Python and GUI programming concepts:
 
-## Reference
+* `tkinter`
+* Functions
+* Loops
+* String manipulation
+* String indexing
+* Modulo operator (`%`)
+* Event handling
+* Widgets
+* Text areas
+* Scrollbars
+* Message boxes
 
-Inspired by the **Bitmap Message** project from *The Big Book of Small Python Projects* by Al Sweigart.
+## Learning Goals
+
+This project is useful for learning how to:
+
+* Build a basic GUI with Tkinter
+* Handle user input
+* Respond to button clicks
+* Work with multiline strings
+* Manipulate strings character by character
+* Connect Python logic to GUI events
+* Display formatted text in a GUI
+
+## License
+
+This project is intended for learning and educational purposes.

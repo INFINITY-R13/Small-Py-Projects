@@ -1,9 +1,12 @@
-# Casear Hacker
-
-print("Enter the encrypted message to hack:")
-message = input()
+# Caesar Hacker
 
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+print("Caesar Cipher Hacker")
+print("--------------------")
+print("Enter the encrypted message to hack:")
+
+message = input().upper()
 
 for key in range(len(SYMBOLS)):
     translated = ''
@@ -14,11 +17,10 @@ for key in range(len(SYMBOLS)):
             num = num - key
 
             if num < 0:
-                num = num + len(SYMBOLS)
+                num += len(SYMBOLS)
 
-            translated = translated + SYMBOLS[num]
-
+            translated += SYMBOLS[num]
         else:
-            translated += symbol      
+            translated += symbol
 
-    print(f'Key #{key}: {translated}')
+    print(f"Key #{key}: {translated}")
