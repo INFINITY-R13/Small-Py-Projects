@@ -52,7 +52,7 @@ Each project may contain:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/Small-Py-Projects.git
+git clone https://github.com/INFINITY-R13/Small-Py-Projects.git
 ```
 
 ### 2. Navigate to the repository
