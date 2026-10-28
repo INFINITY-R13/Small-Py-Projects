@@ -1,0 +1,7 @@
+# Contact Book App Requirements
+# The core application utilizes Python's built-in standard library (tkinter, sqlite3, json, csv, etc.)
+# No external third-party dependencies are required to run the application!
+
+# Optional developer tooling:
+# pytest>=7.0.0
+# flake8>=6.0.0
