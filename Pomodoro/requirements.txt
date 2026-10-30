@@ -1,0 +1,2 @@
+# No third-party dependencies required.
+# The Pomodoro Timer runs on Python standard library only (tkinter, subprocess, platform, time, math).
