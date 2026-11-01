@@ -1,0 +1,133 @@
+[
+  {
+    "id": "cad2b6ca-6066-4082-801a-a30ffcdd59c3",
+    "name": "Morning Hydration (750ml)",
+    "emoji": "💧",
+    "category": "Health",
+    "routine": "Morning",
+    "frequency": "Every Day",
+    "created_at": "2026-10-18",
+    "history": {
+      "2026-11-01": true,
+      "2026-10-31": true,
+      "2026-10-30": true,
+      "2026-10-29": true,
+      "2026-10-28": true,
+      "2026-10-27": false,
+      "2026-10-26": true,
+      "2026-10-25": true
+    }
+  },
+  {
+    "id": "0a08ab2b-3c62-48aa-a010-b655f28ca415",
+    "name": "Mindful Meditation & Breathwork",
+    "emoji": "🧘",
+    "category": "Mindfulness",
+    "routine": "Morning",
+    "frequency": "Every Day",
+    "created_at": "2026-10-12",
+    "history": {
+      "2026-11-01": true,
+      "2026-10-31": true,
+      "2026-10-30": true,
+      "2026-10-29": false,
+      "2026-10-28": true,
+      "2026-10-27": true,
+      "2026-10-26": true,
+      "2026-10-25": true
+    }
+  },
+  {
+    "id": "41e3c88c-6896-45f2-b1cd-353e039179bf",
+    "name": "30 Min Daily Movement / Jog",
+    "emoji": "🏃",
+    "category": "Fitness",
+    "routine": "Morning",
+    "frequency": "Every Day",
+    "created_at": "2026-10-02",
+    "history": {
+      "2026-11-01": false,
+      "2026-10-31": true,
+      "2026-10-30": true,
+      "2026-10-29": true,
+      "2026-10-28": true,
+      "2026-10-27": true,
+      "2026-10-26": false,
+      "2026-10-25": true
+    }
+  },
+  {
+    "id": "765d6b69-f31b-4516-b24b-5a7fa0423ab4",
+    "name": "Read 20 Pages of a Book",
+    "emoji": "📚",
+    "category": "Learning",
+    "routine": "Afternoon",
+    "frequency": "Every Day",
+    "created_at": "2026-10-07",
+    "history": {
+      "2026-11-01": true,
+      "2026-10-31": true,
+      "2026-10-30": false,
+      "2026-10-29": true,
+      "2026-10-28": true,
+      "2026-10-27": true,
+      "2026-10-26": true,
+      "2026-10-25": false
+    }
+  },
+  {
+    "id": "3e5e4dc4-7921-4f5a-8f27-e431f0709aa2",
+    "name": "Matcha or Herbal Infusion",
+    "emoji": "🍵",
+    "category": "Wellness",
+    "routine": "Afternoon",
+    "frequency": "Weekdays (Mon-Fri)",
+    "created_at": "2026-10-22",
+    "history": {
+      "2026-11-01": false,
+      "2026-10-31": true,
+      "2026-10-30": true,
+      "2026-10-29": true,
+      "2026-10-28": false,
+      "2026-10-27": true,
+      "2026-10-26": true
+    }
+  },
+  {
+    "id": "b20478b0-48d8-44d7-96d5-b1af796957f7",
+    "name": "Evening Reflection Journal",
+    "emoji": "✍️",
+    "category": "Mindfulness",
+    "routine": "Evening",
+    "frequency": "Every Day",
+    "created_at": "2026-10-14",
+    "history": {
+      "2026-11-01": false,
+      "2026-10-31": true,
+      "2026-10-30": true,
+      "2026-10-29": true,
+      "2026-10-28": true,
+      "2026-10-27": true,
+      "2026-10-26": true,
+      "2026-10-25": true
+    }
+  },
+  {
+    "id": "c59429d5-6024-4b81-af14-0c9437727565",
+    "name": "Screen-Free 30m Before Bed",
+    "emoji": "💤",
+    "category": "Self Care",
+    "routine": "Evening",
+    "frequency": "Every Day",
+    "created_at": "2026-10-20",
+    "history": {
+      "2026-11-01": false,
+      "2026-10-31": true,
+      "2026-10-30": true,
+      "2026-10-29": true,
+      "2026-10-28": true,
+      "2026-10-27": false,
+      "2026-10-26": true
+    }
+  }
+]
